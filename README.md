@@ -6,5 +6,5 @@ This is a flashcard generator to help students study in their JavaScript for Beg
 ## Contributing
 Issue Tracker: https://github.com/Ernesto-Vaquilar/js-final/issues
 
-##Licensing
+## Licensing
 MIT
