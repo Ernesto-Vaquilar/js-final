@@ -44,11 +44,99 @@
     },
     {
       "question": "What are the Primitive Types?",
-      "answer": "Strings, Numbers, and Booleans"
+      "answer": "String, Number, and Boolean"
     },
     {
       "question": "What is a string?",
       "answer": "A string is anything, such as text, wrapped in single quotes, double quotes, or backticks."
+    }
+  ],
+  [
+    {
+      "question": "3",
+      "answer": "3"
+    }
+  ],
+  [
+    {
+      "question": "4",
+      "answer": "4"
+    }
+  ],
+  [
+    {
+      "question": "5",
+      "answer": "5"
+    }
+  ],
+  [
+    {
+      "question": "6",
+      "answer": "6"
+    }
+  ],
+  [
+    {
+      "question": "7",
+      "answer": "7"
+    }
+  ],
+  [
+    {
+      "question": "8",
+      "answer": "8"
+    }
+  ],
+  [
+    {
+      "question": "9",
+      "answer": "9"
+    }
+  ],
+  [
+    {
+      "question": "10",
+      "answer": "10"
+    }
+  ],
+  [
+    {
+      "question": "What is a Regular Expression (RegEx)?",
+      "answer": "A regular expression is a sequence of characters that forms a search pattern. Example: /bitwise/i; is a regular expression, while 'bitwise' is the search pattern. 'i' is a modifier which modifies the search to be case-insensitive."
+    },
+    {
+      "question": "What are the two ways to construct a regular expression?",
+      "answer": "1. Using a regular expression literal ( const re = /ab+c/; ).<br><br>2. Calling the constructor function of the RegExp object ( const re = new RegExp('ab+c); )."
+    },
+    {
+      "question": "What are JavaScript modules used for?",
+      "answer": "JavaScript modules allow you to break up your code into seperate files."
+    },
+    {
+      "question": "Instead of using 'defer', how do you prepare the HTML file for a JavaScript module?",
+      "answer": "Use type='module'"
+    },
+    {
+      "question": "What are the two ways to export a function or a variable from a file?",
+      "answer": "1. In-line individually by including the keyword 'export' before the variable or function ( export const age = 28; ).<br><br>2. All at once by wrapping the variables and functions in curly braces, preceeded by the 'export' keyword ( export {name, age, height}; ). "
+    },
+    {
+      "question": "What are the two ways to import modules into a file?",
+      "answer": "1. Import from named exports ( import { name, age } from './person.js'; ).<br><br>2. Import from default exports ( import message from './message.js' )."
+    }
+  ],
+  [
+    {
+      "question": "What is an IIFE (Immediately Invoked Function Expression)?",
+      "answer": "It is a JavaScript function that runs as soon as it it defined. It is also known as a Self-Executing Anonymous Function."
+    },
+    {
+      "question": "What are the two major parts of an IIFE?",
+      "answer": "1. The first is the anonymous function with lexical scope enclosed within the Grouping Operator (). This prevents accessing variables within the IIFE idiom as well as polluting the global scope.<br><br>2. The second part creates the immediately invoked function expression () through which the JavaScript engine will directly interpret the function"
+    },
+    {
+      "question": "How do you create an ES6 Block Scope?",
+      "answer": "By wrapping const and let variables within curly brackets. These can be easier to use than an IIFE (Immediately Invoked Function Expression)."
     }
   ]
 ]
