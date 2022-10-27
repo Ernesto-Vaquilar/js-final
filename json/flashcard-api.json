@@ -1,0 +1,270 @@
+[
+  [
+    {
+      "question": "What is JavaScript?",
+      "answer": "JavaScript is a scripting language used to create and control dynamic website content, i.e. anything that moves, refreshes, or changes on the screen. If HTML were the nouns in a sentence, and CSS were the adjectives, then JavaScript would be the verbs."
+    },
+    {
+      "question": "What is the most current version of JavaScript?",
+      "answer": "ECMAScript 6 (2015)"
+    },
+    {
+      "question": "What are the three ways to implement JavaScript?",
+      "answer": "Inline (not recommended), Internal (sometimes appropriate), and External (preferred method)."
+    },
+    {
+      "question": "Is white space meaningful in JavaScript?",
+      "answer": "In theory, no. In practice, most people will likely keep a well defined style or use a style tool such as the Prettier extension in Visual Studio Code."
+    },
+    {
+      "question": "Is Case Sensitivity important in JavaScript?",
+      "answer": "Yes! A variable named 'something' is different than 'Something'."
+    },
+    {
+      "question": "What are the two ways to add comments?",
+      "answer": "Single line comments using //, and multi-line comments starting with /* and ending with */ . "
+    },
+    {
+      "question": "Are Semicolons optional in javaScript?",
+      "answer": "In most cases, you can omit semicolons altogether. However, under certain circumstances, omitting semicolons can have unexpected results."
+    },
+    {
+      "question": "How do you open the console in a browser?",
+      "answer": "Open browser > right click > inspect > console"
+    },
+    {
+      "question": "How do you log a message to the console?",
+      "answer": "console.log()"
+    }
+  ],
+  [
+    {
+      "question": "What are the three Variable Types?",
+      "answer": "const(declared values cannot be reassigned, let(declared values can be reassigned), and var(used in previous JavaScript versions, and should be avoided if possible)"
+    },
+    {
+      "question": "What are the Primitive Types?",
+      "answer": "String, Number, and Boolean"
+    },
+    {
+      "question": "What is a string?",
+      "answer": "A string is anything, such as text, wrapped in single quotes, double quotes, or backticks."
+    },
+    {
+      "question": "What is a number?",
+      "answer": "An integer that is NOT wrapped in single quotes, double quotes, or backticks."
+    },
+    {
+      "question": "What is NaN?",
+      "answer": "NaN is not a number. It can arise due to a variety of ways, such as by dividing by zero. An important thing to note is that NaN is still considered a number data type."
+    },
+    {
+      "question": "What is a Boolean?",
+      "answer": "It is one of the primitive data types. It is either True or False."
+    },
+    {
+      "question": "What is Undefined?",
+      "answer": "Undefined means that a value has not been assigned."
+    },
+    {
+      "question": "What is null?",
+      "answer": "Like undefined, null has no value, but it has been assigned."
+    },
+    {
+      "question": "What is BigInt?",
+      "answer": "BigInt is a data type used to store large numbers. It is created by adding an 'n' to the end of an integer. Example: const bigint = 1234567890123456789012345678901234567890n; "
+    },
+    {
+      "question": "What is a Symbol?",
+      "answer": "A symbol is a data type guaranteed to be unique. For example, even though they are typed the same way, Symbol('foo') is not the same as Symbol('foo')."
+    },
+    {
+      "question": "What is the typeof operator used for?",
+      "answer": "The typeof operator is used to return a string indicating the type of the operand's value. Example: console.log(typeof 42); returns 'number'"
+    },
+    {
+      "question": "What is variable hoisting?",
+      "answer": "The JavaScript engine treats all variable declarations using const, let, or var as if they were declared at the top. This is essentially 'hoisting'."
+    },
+    {
+      "question": "What are Assignment Operators?",
+      "answer": "Assignment operators (=, +=, -=, *=, /=) are used to assign values to variables. "
+    },
+    {
+      "question": "What are Arithmetic Operators?",
+      "answer": "Arithmetic Operators (+, -, *, **, /, %, ++, --) are used to perform arithmetic on numbers (literals or variables)."
+    },
+    {
+      "question": "What is Modulo (%)?",
+      "answer": "Modulo is used to return the remainder. This can be useful to determine if a number is either even or odd."
+    }
+  ],
+  [
+    {
+      "question": "What are String Methods?",
+      "answer": "String methods are useful operations we can use on strings, such as capitalizing or finding the length of a string."
+    },
+    {
+      "question": "What does .length do?",
+      "answer": "It finds the length of a string."
+    },
+    {
+      "question": "What does .slice() do?",
+      "answer": "It extracts a substring from a string at specified indexes."
+    },
+    {
+      "question": "What are the three Pop Up Methods?",
+      "answer": "alert(), confirm(), and prompt()"
+    },
+    {
+      "question": "What is the Math Object?",
+      "answer": "It is a built-in object that has properties and methods for mathematical constants and functions. For example, Math.random() will produce a number between 0 and 1."
+    },
+    {
+      "question": "What does Math.floor() do?",
+      "answer": "It rounds down to the nearest whole number. For example, Math.floor(3.9726); will return 3."
+    },
+    {
+      "question": "What is the Date Object?",
+      "answer": "The Date object is a datatype built into JavaScript used for operations involving dates and times, such as years, months, hours, milliseconds, etc."
+    }
+  ],
+  [
+    {
+      "question": "What is Control Flow?",
+      "answer": "It is the order in which the computer executes statements in a script. This is often altered using if statements."
+    },
+    {
+      "question": "What is an if statement?",
+      "answer": "The if statement executes a statement if a specified condition is truthy."
+    },
+    {
+      "question": "When does an if else statement run?",
+      "answer": "An if else statement runs if the specified condition is truthy, and any other if or if else statements above it have not run. "
+    },
+    {
+      "question": "When does the 'else' statement run?",
+      "answer": "An else statement runs when none of the if or if else statements run."
+    },
+    {
+      "question": "What are Comparison Operators?",
+      "answer": "Comparison Operators (===, !==, >, >=, <, <=) are used to compare two things such as variables or numbers to test for Truthy or Falsy."
+    },
+    {
+      "question": "What is considered Falsy?",
+      "answer": "False, 0, an empty string (''), Null, Undefined, and NaN"
+    },
+    {
+      "question": "What is considered Truthy?",
+      "answer": "All other values apart from False, 0, an empty string (''), Null, Undefined, and NaN"
+    },
+    {
+      "question": "What are Logical Operators (&&, ||, !) used for?",
+      "answer": "They are used to determine the logic between variables or values. For example, (2 == 2 && 3 == car) would come out to false."
+    },
+    {
+      "question": "What does && mean?",
+      "answer": "&& is the AND logical operator"
+    },
+    {
+      "question": "What does || mean?",
+      "answer": "|| is the OR logical operator"
+    },
+    {
+      "question": "What does ! mean?",
+      "answer": "! means NOT"
+    },
+    {
+      "question": "What is a Switch Statement?",
+      "answer": "A Switch Statement is another way to control flow by evaluating an expression, matching the expression's value against a series of cases."
+    },
+    {
+      "question": "What is a Ternary Operator?",
+      "answer": "It is a three-part operator often used as an alternative to an if...else statement. The first part before the ? is the condition, the second part before the : is the result if the condition is true, and the third part is the result if the condition is false."
+    },
+    {
+      "question": "What are Edge Cases?",
+      "answer": "They are scenarios that are unlikely to happen, but are addressed so that the program, app, or website doesn't crash or malfunction."
+    },
+    {
+      "question": "What is debugging?",
+      "answer": "Debugging is searching for and fixing errors in the code."
+    }
+  ],
+  [
+    {
+      "question": "5",
+      "answer": "5"
+    }
+  ],
+  [
+    {
+      "question": "6",
+      "answer": "6"
+    }
+  ],
+  [
+    {
+      "question": "7",
+      "answer": "7"
+    }
+  ],
+  [
+    {
+      "question": "8",
+      "answer": "8"
+    }
+  ],
+  [
+    {
+      "question": "9",
+      "answer": "9"
+    }
+  ],
+  [
+    {
+      "question": "10",
+      "answer": "10"
+    }
+  ],
+  [
+    {
+      "question": "What is a Regular Expression (RegEx)?",
+      "answer": "A regular expression is a sequence of characters that forms a search pattern. Example: /bitwise/i; is a regular expression, while 'bitwise' is the search pattern. 'i' is a modifier which modifies the search to be case-insensitive."
+    },
+    {
+      "question": "What are the two ways to construct a regular expression?",
+      "answer": "1. Using a regular expression literal ( const re = /ab+c/; ).<br><br>2. Calling the constructor function of the RegExp object ( const re = new RegExp('ab+c); )."
+    },
+    {
+      "question": "What are JavaScript modules used for?",
+      "answer": "JavaScript modules allow you to break up your code into seperate files."
+    },
+    {
+      "question": "Instead of using 'defer', how do you prepare the HTML file for a JavaScript module?",
+      "answer": "Use type='module'"
+    },
+    {
+      "question": "What are the two ways to export a function or a variable from a file?",
+      "answer": "1. In-line individually by including the keyword 'export' before the variable or function ( export const age = 28; ).<br><br>2. All at once by wrapping the variables and functions in curly braces, preceeded by the 'export' keyword ( export {name, age, height}; ). "
+    },
+    {
+      "question": "What are the two ways to import modules into a file?",
+      "answer": "1. Import from named exports ( import { name, age } from './person.js'; ).<br><br>2. Import from default exports ( import message from './message.js' )."
+    }
+  ],
+  [
+    {
+      "question": "What is an IIFE (Immediately Invoked Function Expression)?",
+      "answer": "It is a JavaScript function that runs as soon as it it defined. It is also known as a Self-Executing Anonymous Function."
+    },
+    {
+      "question": "What are the two major parts of an IIFE?",
+      "answer": "1. The first is the anonymous function with lexical scope enclosed within the Grouping Operator (). This prevents accessing variables within the IIFE idiom as well as polluting the global scope.<br><br>2. The second part creates the immediately invoked function expression () through which the JavaScript engine will directly interpret the function"
+    },
+    {
+      "question": "How do you create an ES6 Block Scope?",
+      "answer": "By wrapping const and let variables within curly brackets. These can be easier to use than an IIFE (Immediately Invoked Function Expression)."
+    }
+  ]
+]

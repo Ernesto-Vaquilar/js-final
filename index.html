@@ -8,9 +8,78 @@
       name="description"
       content="This is a flashcard generator to help students study in their JavaScript for Beginners class at Bitwise Industries."
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <script type="module" src="./js/main.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/main.js"></script>
     <title>JavaScript for Beginners: Flashcard Generator</title>
   </head>
-  <body></body>
+  <body>
+    <header class="text-center p-2">
+      <h1>JavaScript for Beginners: Flashcard Generator</h1>
+    </header>
+    <form class="container-fluid d-flex justify-content-center">
+      <div class="col-lg-6 border rounded p-2">
+        <div>
+          <h2 class="text-center fs-3">Select Day(s):</h2>
+        </div>
+        <div
+          id="day-buttons-container"
+          class="d-flex flex-wrap justify-content-center"
+        ></div>
+        <div class="d-flex justify-content-around align-items-center mt-2">
+          <div class="form-check form-switch d-flex align-items-center">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="selection-toggle"
+              checked
+            />
+            <label
+              class="form-check-label align-middle ms-1 me-3"
+              for="selection-toggle"
+              >Select All/None</label
+            >
+            <button type="button" class="btn btn-primary" id="random-flashcard">
+              Random Flashcard
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <h2 id="flashcard-title" class="text-center py-2">How to Use:</h2>
+    <div class="container-fluid d-flex justify-content-center">
+      <div id="flashcard-container" class="position-relative">
+        <div id="flashcard" class="position-absolute shadow border rounded">
+          <div
+            id="flashcard-front"
+            class="position-absolute d-flex justify-content-center align-items-center rounded p-2"
+          >
+            <h3 id="question" class="text-center">
+              Make a selection above.<br />Click this flashcard to view answer.
+            </h3>
+          </div>
+          <div
+            id="flashcard-back"
+            class="position-absolute d-flex justify-content-center align-items-center rounded p-2"
+          >
+            <p id="answer" class="text-center fs-4">
+              Click this flashcard again to view question.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
