@@ -139,12 +139,12 @@
       "answer": "The if statement executes a statement if a specified condition is truthy."
     },
     {
-      "question": "When does an if else statement run?",
-      "answer": "An if else statement runs if the specified condition is truthy, and any other if or if else statements above it have not run. "
+      "question": "When does an else if statement run?",
+      "answer": "An else if statement runs if the specified condition is truthy, and any other if or else if statements above it have not run. "
     },
     {
       "question": "When does the 'else' statement run?",
-      "answer": "An else statement runs when none of the if or if else statements run."
+      "answer": "An else statement runs when none of the if or else if statements run."
     },
     {
       "question": "What are Comparison Operators?",
