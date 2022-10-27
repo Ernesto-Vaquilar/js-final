@@ -1,0 +1,54 @@
+[
+  [
+    {
+      "question": "What is JavaScript?",
+      "answer": "JavaScript is a scripting language used to create and control dynamic website content, i.e. anything that moves, refreshes, or changes on the screen. If HTML were the nouns in a sentence, and CSS were the adjectives, then JavaScript would be the verbs."
+    },
+    {
+      "question": "What is the most current version of JavaScript?",
+      "answer": "ECMAScript 6 (2015)"
+    },
+    {
+      "question": "What are the three ways to implement JavaScript?",
+      "answer": "Inline (not recommended), Internal (sometimes appropriate), and External (preferred method)."
+    },
+    {
+      "question": "Is white space meaningful in JavaScript?",
+      "answer": "In theory, no. In practice, most people will likely keep a well defined style or use a style tool such as the Prettier extension in Visual Studio Code."
+    },
+    {
+      "question": "Is Case Sensitivity important in JavaScript?",
+      "answer": "Yes! A variable named 'something' is different than 'Something'."
+    },
+    {
+      "question": "What are the two ways to add comments?",
+      "answer": "Single line comments using //, and multi-line comments starting with /* and ending with */ . "
+    },
+    {
+      "question": "Are Semicolons optional in javaScript?",
+      "answer": "In most cases, you can omit semicolons altogether. However, under certain circumstances, omitting semicolons can have unexpected results."
+    },
+    {
+      "question": "How do you open the console in a browser?",
+      "answer": "Open browser > right click > inspect > console"
+    },
+    {
+      "question": "How do you log a message to the console?",
+      "answer": "console.log()"
+    }
+  ],
+  [
+    {
+      "question": "What are the three Variable Types?",
+      "answer": "const(declared values cannot be reassigned, let(declared values can be reassigned), and var(used in previous JavaScript versions, and should be avoided if possible)"
+    },
+    {
+      "question": "What are the Primitive Types?",
+      "answer": "Strings, Numbers, and Booleans"
+    },
+    {
+      "question": "What is a string?",
+      "answer": "A string is anything, such as text, wrapped in single quotes, double quotes, or backticks."
+    }
+  ]
+]

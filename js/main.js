@@ -1,3 +1,4 @@
+let selectedDays = [];
 const checkboxes = document.getElementsByClassName("btn-check");
 const selectionToggle = document.getElementById("selection-toggle");
 const randomFlashcardButton = document.getElementById("random-flashcard");
@@ -38,8 +39,8 @@ selectionToggle.addEventListener("click", function () {
   }
 });
 
-function generateFlashcard() {
-  const selectedDays = [];
+function verifySelectedDays() {
+  selectedDays = [];
   for (let checkbox of checkboxes) {
     if (checkbox.checked) {
       selectedDays.splice(
@@ -49,9 +50,17 @@ function generateFlashcard() {
       );
     }
   }
-  console.log(selectedDays);
+
+  const randomDay =
+    selectedDays[Math.floor(Math.random() * selectedDays.length)];
+
+  const dayArray = async () => {
+    try {
+        const response = await fetch('')
+    }
+  }
 }
 
 randomFlashcardButton.addEventListener("click", function () {
-  generateFlashcard();
+  verifySelectedDays();
 });
