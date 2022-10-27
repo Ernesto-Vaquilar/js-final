@@ -1,6 +1,6 @@
-const selectedDays = [];
-const dayButtons = document.getElementsByClassName("btn-check");
+const checkboxes = document.getElementsByClassName("btn-check");
 const selectionToggle = document.getElementById("selection-toggle");
+const randomFlashcardButton = document.getElementById("random-flashcard");
 
 class DayButton {
   constructor(day) {
@@ -9,6 +9,7 @@ class DayButton {
 
     const input = document.createElement("input");
     input.id = `day-${day}`;
+    input.value = day;
     input.type = "checkbox";
     input.checked = true;
     input.classList.add("btn-check");
@@ -28,15 +29,29 @@ for (let i = 0; i <= 11; i++) {
 }
 
 selectionToggle.addEventListener("click", function () {
-  for (let i = 0; i < dayButtons.length; i++) {
+  for (let i = 0; i < checkboxes.length; i++) {
     if (selectionToggle.checked == true) {
-      dayButtons[i].checked = true;
+      checkboxes[i].checked = true;
     } else {
-      dayButtons[i].checked = false;
+      checkboxes[i].checked = false;
     }
   }
 });
 
+function generateFlashcard() {
+  const selectedDays = [];
+  for (let checkbox of checkboxes) {
+    if (checkbox.checked) {
+      selectedDays.splice(
+        parseInt(checkbox.value),
+        0,
+        parseInt(checkbox.value)
+      );
+    }
+  }
+  console.log(selectedDays);
+}
 
-
-console.log(selectedDays);
+randomFlashcardButton.addEventListener("click", function () {
+  generateFlashcard();
+});
