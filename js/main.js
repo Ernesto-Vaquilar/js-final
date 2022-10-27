@@ -49,7 +49,7 @@ selectionToggle.addEventListener("click", function () {
 
 function generateFlashcard() {
   selectedDays = [];
-  for (let checkbox of checkboxes) { 
+  for (let checkbox of checkboxes) {
     if (checkbox.checked) {
       selectedDays.splice(
         parseInt(checkbox.value),
