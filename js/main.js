@@ -39,7 +39,7 @@ selectionToggle.addEventListener("click", function () {
   }
 });
 
-function verifySelectedDays() {
+function generateFlashcard() {
   selectedDays = [];
   for (let checkbox of checkboxes) {
     if (checkbox.checked) {
@@ -54,13 +54,22 @@ function verifySelectedDays() {
   const randomDay =
     selectedDays[Math.floor(Math.random() * selectedDays.length)];
 
-  const dayArray = async () => {
+  const randomDayArray = async () => {
     try {
-        const response = await fetch('')
+      const response = await fetch("./json/flashcard-api.json");
+      const data = await response.json();
+      const arr = data[randomDay];
+      const selectedCard = arr[Math.floor(Math.random() * arr.length)];
+      console.log(arr);
+      console.log(selectedCard);
+    } catch (e) {
+      console.log("Error:", e);
     }
-  }
+  };
+
+  randomDayArray();
 }
 
 randomFlashcardButton.addEventListener("click", function () {
-  verifySelectedDays();
+  generateFlashcard();
 });
