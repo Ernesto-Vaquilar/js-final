@@ -4,6 +4,11 @@ const selectionToggle = document.getElementById("selection-toggle");
 const randomFlashcardButton = document.getElementById("random-flashcard");
 const flashcard = document.getElementById("flashcard");
 
+flashcard.addEventListener("click", () => {
+  console.log(flashcard);
+  flashcard.classList.toggle("isFlipped");
+});
+
 class DayButton {
   constructor(day) {
     const div = document.createElement("div");
@@ -61,9 +66,18 @@ function generateFlashcard() {
       const data = await response.json();
       const arr = data[randomDay];
       const selectedCard = arr[Math.floor(Math.random() * arr.length)];
-      console.log(selectedCard);
+
+      document.getElementById(
+        "question"
+      ).innerHTML = `${selectedCard.question}`;
+
+      document.getElementById("answer").innerHTML = `${selectedCard.answer}`;
     } catch (e) {
       console.log("Error:", e);
+      document.getElementById("question").innerHTML =
+        "Please make a selection above";
+      document.getElementById("answer").innerHTML =
+        "Please make a selection above";
     }
   };
 
@@ -71,10 +85,6 @@ function generateFlashcard() {
 }
 
 randomFlashcardButton.addEventListener("click", function () {
+  flashcard.classList.remove("isFlipped");
   generateFlashcard();
-});
-
-flashcard.addEventListener("click", () => {
-  console.log(flashcard);
-  flashcard.classList.toggle("isFlipped");
 });
