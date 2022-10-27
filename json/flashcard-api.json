@@ -101,14 +101,94 @@
   ],
   [
     {
-      "question": "3",
-      "answer": "3"
+      "question": "What are String Methods?",
+      "answer": "String methods are useful operations we can use on strings, such as capitalizing or finding the length of a string."
+    },
+    {
+      "question": "What does .length do?",
+      "answer": "It finds the length of a string."
+    },
+    {
+      "question": "What does .slice() do?",
+      "answer": "It extracts a substring from a string at specified indexes."
+    },
+    {
+      "question": "What are the three Pop Up Methods?",
+      "answer": "alert(), confirm(), and prompt()"
+    },
+    {
+      "question": "What is the Math Object?",
+      "answer": "It is a built-in object that has properties and methods for mathematical constants and functions. For example, Math.random() will produce a number between 0 and 1."
+    },
+    {
+      "question": "What does Math.floor() do?",
+      "answer": "It rounds down to the nearest whole number. For example, Math.floor(3.9726); will return 3."
+    },
+    {
+      "question": "What is the Date Object?",
+      "answer": "The Date object is a datatype built into JavaScript used for operations involving dates and times, such as years, months, hours, milliseconds, etc."
     }
   ],
   [
     {
-      "question": "4",
-      "answer": "4"
+      "question": "What is Control Flow?",
+      "answer": "It is the order in which the computer executes statements in a script. This is often altered using if statements."
+    },
+    {
+      "question": "What is an if statement?",
+      "answer": "The if statement executes a statement if a specified condition is truthy."
+    },
+    {
+      "question": "When does an if else statement run?",
+      "answer": "An if else statement runs if the specified condition is truthy, and any other if or if else statements above it have not run. "
+    },
+    {
+      "question": "When does the 'else' statement run?",
+      "answer": "An else statement runs when none of the if or if else statements run."
+    },
+    {
+      "question": "What are Comparison Operators?",
+      "answer": "Comparison Operators (===, !==, >, >=, <, <=) are used to compare two things such as variables or numbers to test for Truthy or Falsy."
+    },
+    {
+      "question": "What is considered Falsy?",
+      "answer": "False, 0, an empty string (''), Null, Undefined, and NaN"
+    },
+    {
+      "question": "What is considered Truthy?",
+      "answer": "All other values apart from False, 0, an empty string (''), Null, Undefined, and NaN"
+    },
+    {
+      "question": "What are Logical Operators (&&, ||, !) used for?",
+      "answer": "They are used to determine the logic between variables or values. For example, (2 == 2 && 3 == car) would come out to false."
+    },
+    {
+      "question": "What does && mean?",
+      "answer": "&& is the AND logical operator"
+    },
+    {
+      "question": "What does || mean?",
+      "answer": "|| is the OR logical operator"
+    },
+    {
+      "question": "What does ! mean?",
+      "answer": "! means NOT"
+    },
+    {
+      "question": "What is a Switch Statement?",
+      "answer": "A Switch Statement is another way to control flow by evaluating an expression, matching the expression's value against a series of cases."
+    },
+    {
+      "question": "What is a Ternary Operator?",
+      "answer": "It is a three-part operator often used as an alternative to an if...else statement. The first part before the ? is the condition, the second part before the : is the result if the condition is true, and the third part is the result if the condition is false."
+    },
+    {
+      "question": "What are Edge Cases?",
+      "answer": "They are scenarios that are unlikely to happen, but are addressed so that the program, app, or website doesn't crash or malfunction."
+    },
+    {
+      "question": "What is debugging?",
+      "answer": "Debugging is searching for and fixing errors in the code."
     }
   ],
   [
