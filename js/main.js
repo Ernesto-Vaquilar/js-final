@@ -2,6 +2,7 @@ let selectedDays = [];
 const checkboxes = document.getElementsByClassName("btn-check");
 const selectionToggle = document.getElementById("selection-toggle");
 const randomFlashcardButton = document.getElementById("random-flashcard");
+const flashcard = document.getElementById("flashcard");
 
 class DayButton {
   constructor(day) {
@@ -60,7 +61,6 @@ function generateFlashcard() {
       const data = await response.json();
       const arr = data[randomDay];
       const selectedCard = arr[Math.floor(Math.random() * arr.length)];
-      console.log(arr);
       console.log(selectedCard);
     } catch (e) {
       console.log("Error:", e);
@@ -72,4 +72,9 @@ function generateFlashcard() {
 
 randomFlashcardButton.addEventListener("click", function () {
   generateFlashcard();
+});
+
+flashcard.addEventListener("click", () => {
+  console.log(flashcard);
+  flashcard.classList.toggle("isFlipped");
 });
