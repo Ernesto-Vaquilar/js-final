@@ -49,6 +49,54 @@
     {
       "question": "What is a string?",
       "answer": "A string is anything, such as text, wrapped in single quotes, double quotes, or backticks."
+    },
+    {
+      "question": "What is a number?",
+      "answer": "An integer that is NOT wrapped in single quotes, double quotes, or backticks."
+    },
+    {
+      "question": "What is NaN?",
+      "answer": "NaN is not a number. It can arise due to a variety of ways, such as by dividing by zero. An important thing to note is that NaN is still considered a number data type."
+    },
+    {
+      "question": "What is a Boolean?",
+      "answer": "It is one of the primitive data types. It is either True or False."
+    },
+    {
+      "question": "What is Undefined?",
+      "answer": "Undefined means that a value has not been assigned."
+    },
+    {
+      "question": "What is null?",
+      "answer": "Like undefined, null has no value, but it has been assigned."
+    },
+    {
+      "question": "What is BigInt?",
+      "answer": "BigInt is a data type used to store large numbers. It is created by adding an 'n' to the end of an integer. Example: const bigint = 1234567890123456789012345678901234567890n; "
+    },
+    {
+      "question": "What is a Symbol?",
+      "answer": "A symbol is a data type guaranteed to be unique. For example, even though they are typed the same way, Symbol('foo') is not the same as Symbol('foo')."
+    },
+    {
+      "question": "What is the typeof operator used for?",
+      "answer": "The typeof operator is used to return a string indicating the type of the operand's value. Example: console.log(typeof 42); returns 'number'"
+    },
+    {
+      "question": "What is variable hoisting?",
+      "answer": "The JavaScript engine treats all variable declarations using const, let, or var as if they were declared at the top. This is essentially 'hoisting'."
+    },
+    {
+      "question": "What are Assignment Operators?",
+      "answer": "Assignment operators (=, +=, -=, *=, /=) are used to assign values to variables. "
+    },
+    {
+      "question": "What are Arithmetic Operators?",
+      "answer": "Arithmetic Operators (+, -, *, **, /, %, ++, --) are used to perform arithmetic on numbers (literals or variables)."
+    },
+    {
+      "question": "What is Modulo (%)?",
+      "answer": "Modulo is used to return the remainder. This can be useful to determine if a number is either even or odd."
     }
   ],
   [

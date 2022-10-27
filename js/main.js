@@ -6,7 +6,6 @@ const flashcard = document.getElementById("flashcard");
 
 // Flips the Flashcard
 flashcard.addEventListener("click", () => {
-  console.log(flashcard);
   flashcard.classList.toggle("isFlipped");
 });
 
@@ -50,7 +49,7 @@ selectionToggle.addEventListener("click", function () {
 
 function generateFlashcard() {
   selectedDays = [];
-  for (let checkbox of checkboxes) {
+  for (let checkbox of checkboxes) { 
     if (checkbox.checked) {
       selectedDays.splice(
         parseInt(checkbox.value),
@@ -88,7 +87,6 @@ function generateFlashcard() {
         "Please make a selection above";
     }
   };
-
   randomDayArray();
 }
 
