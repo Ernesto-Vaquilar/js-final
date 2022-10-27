@@ -4,6 +4,7 @@ const selectionToggle = document.getElementById("selection-toggle");
 const randomFlashcardButton = document.getElementById("random-flashcard");
 const flashcard = document.getElementById("flashcard");
 
+// Flips the Flashcard
 flashcard.addEventListener("click", () => {
   console.log(flashcard);
   flashcard.classList.toggle("isFlipped");
@@ -31,10 +32,12 @@ class DayButton {
   }
 }
 
+// Creates Buttons for the 12 Days
 for (let i = 0; i <= 11; i++) {
   new DayButton(i);
 }
 
+// Connects switch to all the day buttons to toggle on/off
 selectionToggle.addEventListener("click", function () {
   for (let i = 0; i < checkboxes.length; i++) {
     if (selectionToggle.checked == true) {
@@ -67,6 +70,10 @@ function generateFlashcard() {
       const arr = data[randomDay];
       const selectedCard = arr[Math.floor(Math.random() * arr.length)];
 
+      document.getElementById("flashcard-title").innerHTML = `Day ${
+        randomDay + 1
+      }:`;
+
       document.getElementById(
         "question"
       ).innerHTML = `${selectedCard.question}`;
@@ -74,6 +81,7 @@ function generateFlashcard() {
       document.getElementById("answer").innerHTML = `${selectedCard.answer}`;
     } catch (e) {
       console.log("Error:", e);
+      document.getElementById("flashcard-title").innerHTML = `Error:`;
       document.getElementById("question").innerHTML =
         "Please make a selection above";
       document.getElementById("answer").innerHTML =
