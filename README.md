@@ -1,4 +1,4 @@
-# JavaScript Final Project
+# JavaScript Final Project - Flashcard Generator
 
 ## Description
 This is a flashcard generator to help students study in their JavaScript for Beginners class at Bitwise Industries.
