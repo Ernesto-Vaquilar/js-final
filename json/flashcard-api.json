@@ -246,7 +246,7 @@
     },
     {
       "question": "What are the two ways to export a function or a variable from a file?",
-      "answer": "1. In-line individually by including the keyword 'export' before the variable or function ( export const age = 28; ).<br><br>2. All at once by wrapping the variables and functions in curly braces, preceeded by the 'export' keyword ( export {name, age, height}; ). "
+      "answer": "1. In-line individually by including the keyword 'export' before the variable or function ( export const age = 28; ).<br><br>2. All at once by wrapping the variables and functions in curly braces, preceded by the 'export' keyword ( export {name, age, height}; ). "
     },
     {
       "question": "What are the two ways to import modules into a file?",
